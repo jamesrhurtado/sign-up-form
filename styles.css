@@ -78,10 +78,10 @@ input, label {
 }
 
 form{
-    border-style: groove;
     margin: 10px 0;
     padding: 30px;
     background-color: #fff;
+    box-shadow: 0 3px 10px  rgb(0 0 0 / 0.2);
 }
 
 .sign-up-side .text{
@@ -93,4 +93,12 @@ form{
 
 .submit-section{
     margin: 40px;
+}
+
+.submit-section a{
+    color: #596D48;
+    font-weight: bold;
+}
+.submit-section a:hover{
+    color: #799462;
 }

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&display=swap');
 
 *{
     margin: 0;
@@ -9,6 +8,8 @@
     outline: none;
 }
 
+
+/* GENERAL STYLES*/
 button{
     background-color: #596D48;
     color: #fff;
@@ -18,13 +19,18 @@ button{
     border-style: none;
     width: 250px;
     height: auto;
-    margin: 30px;
+    margin: 20px 0px;
 }
+
+input, label {
+    display:block;
+}
+/* BODY*/
 
 .container{
     display: flex;
 }
-
+/* LEFT SIDE*/
 .images{
     background-image: url(images/green-leaf.avif);
     background-repeat: no-repeat;
@@ -38,7 +44,7 @@ button{
     top: 150px;
     display: flex;
     justify-content: center;
-    background-color: #000;
+    background-color: rgba(0,0,0,.5);
 }
 
 
@@ -64,18 +70,27 @@ button{
     height: auto;
 }
 
+/* RIGHT SIDE*/
 .sign-up-side{
     display: flex;
     flex-direction: column;
+    background-color: rgb(251, 251, 251);
 }
 
 form{
     border-style: groove;
     margin: 10px 0;
     padding: 30px;
+    background-color: #fff;
 }
 
 .sign-up-side .text{
-    margin: 100px 280px 40px 40px;
-    font-size: 1.2rem;
+    margin: 100px 210px 40px 40px;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.submit-section{
+    margin: 40px;
 }

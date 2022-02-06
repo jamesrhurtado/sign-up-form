@@ -22,9 +22,10 @@ button{
     margin: 20px 0px;
 }
 
-input, label {
-    display:block;
+input{
+    width: 15rem;
 }
+
 /* BODY*/
 
 .container{
@@ -71,6 +72,8 @@ input, label {
 }
 
 /* RIGHT SIDE*/
+
+
 .sign-up-side{
     display: flex;
     flex-direction: column;
@@ -79,7 +82,7 @@ input, label {
 
 form{
     margin: 10px 0;
-    padding: 30px;
+    padding: 25px 45px 30px;
     background-color: #fff;
     box-shadow: 0 3px 10px  rgb(0 0 0 / 0.2);
 }
@@ -91,6 +94,26 @@ form{
     font-weight: 900;
 }
 
+.form-group{
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    margin-bottom: 15px;
+}
+
+label{
+    margin: 5px 5px 5px 0px;
+}
+
+form .input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+form h4{
+    margin-bottom:15px;
+}
+
 .submit-section{
     margin: 40px;
 }
@@ -99,6 +122,11 @@ form{
     color: #596D48;
     font-weight: bold;
 }
-.submit-section a:hover{
+.submit-section a:hover, button:hover{
     color: #799462;
+}
+
+button:hover{
+    background-color: #799462;
+    color: #fff;
 }

@@ -5,6 +5,12 @@
     --main-bg:rgb(251, 251, 251);
 }
 
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("assets/Norse-Bold.otf");
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +37,10 @@ input{
     width: 15rem;
     border: 2px solid #e5e7eb;
     border-radius: 4px;
+}
+
+label{
+    font-family: 'Lato', sans-serif;
 }
 
 input:focus{
@@ -71,8 +81,8 @@ input:focus{
     top: 35px;
     text-align: center;
     color: #fff;
-    font-family: 'EB Garamond', serif;
-    font-size: 4rem;
+    font-family: "Norse Bold";
+    font-size: 5rem;
     float: right;
 }
 
@@ -81,6 +91,17 @@ input:focus{
     height: auto;
 }
 
+.attribution{
+    position: absolute;
+    bottom: -210px;
+    font-size: 0.9rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+.attribution a{
+    color: #fff;
+    text-decoration: underline;
+}
 /* RIGHT SIDE*/
 .sign-up-side{
     display: flex;
@@ -118,7 +139,7 @@ form .input-box{
     flex-direction: column;
 }
 
-form h4{
+form h2{
     margin-bottom:15px;
 }
 
@@ -185,6 +206,10 @@ button:hover{
     .logo p{
         top: 0px;
         font-size: 2.5rem;
+    }
+
+    .attribution {
+        display: none;
     }
  }
  

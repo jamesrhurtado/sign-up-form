@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&display=swap');
 
+:root{
+    --button-bg: #596D48;
+    --main-bg:rgb(251, 251, 251);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +13,13 @@
     outline: none;
 }
 
-
 /* GENERAL STYLES*/
 button{
-    background-color: #596D48;
+    background-color: var(--button-bg, green);
     color: #fff;
     padding: 0.5rem 0.75rem;
     font-size: 1.2rem;
+    font-weight: 900;
     border-radius: 10px;
     border-style: none;
     width: 250px;
@@ -24,6 +29,8 @@ button{
 
 input{
     width: 15rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
 }
 
 /* BODY*/
@@ -35,10 +42,10 @@ input{
 .images{
     background-image: url(images/green-leaf.avif);
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center center;
+    height: 130vh;
     width: 80vw;
 }
-
 
 .logo {
     position: relative;
@@ -48,7 +55,6 @@ input{
     background-color: rgba(0,0,0,.5);
 }
 
-
 .logo img{
     width: 100px;
     margin: 10px;
@@ -56,15 +62,13 @@ input{
 
 .logo p{
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 35px;
     text-align: center;
     color: #fff;
     font-family: 'EB Garamond', serif;
-    font-size: 5rem;
+    font-size: 4rem;
     float: right;
 }
-
 
 .green-leaf img{
     width: 480px;
@@ -72,12 +76,10 @@ input{
 }
 
 /* RIGHT SIDE*/
-
-
 .sign-up-side{
     display: flex;
     flex-direction: column;
-    background-color: rgb(251, 251, 251);
+    background-color: var(--main-bg);
 }
 
 form{
@@ -130,3 +132,29 @@ button:hover{
     background-color: #799462;
     color: #fff;
 }
+
+/*MEDIA QUERIES*/
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (max-width: 992px) {
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo p{
+        top: 0px;
+        font-size: 2.5rem;
+    }
+ }
+ 

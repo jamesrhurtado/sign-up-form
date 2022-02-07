@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Sign up Form</title>
 </head>
 <body>
@@ -29,40 +30,43 @@
                 <p>You <i>know</i> you want to.</p>
             </div>
             <form action="">
-                <h4>Let's do this!</h4>
-                <div class="form-group">
-                    <div class="input-box">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="" required>
+                <div class= "main-form">
+                    <h4>Let's do this!</h4>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="" required>
+                        </div>
+                        <div class = "input-box">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="" required>
+                        </div>
                     </div>
-                    <div class = "input-box">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="" required>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="" required onchange="checkPassword()">
+                        </div>
+                        <div class="input-box">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm" id="" required onchange="checkPassword()">
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-box">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-box">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="password">CONFIRM PASSWORD</label>
-                        <input type="password" name="password" id="" required>
-                    </div>
-                </div>
+            
+            <button type="submit">Create Account</button>
             </form>
             <div class = "submit-section">
-            <button>Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>

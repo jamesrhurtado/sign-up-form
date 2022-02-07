@@ -33,6 +33,12 @@ input{
     border-radius: 4px;
 }
 
+input:focus{
+    border-color: blue;
+}
+
+
+
 /* BODY*/
 
 .container{
@@ -82,7 +88,7 @@ input{
     background-color: var(--main-bg);
 }
 
-form{
+.main-form{
     margin: 10px 0;
     padding: 25px 45px 30px;
     background-color: #fff;
@@ -116,6 +122,10 @@ form h4{
     margin-bottom:15px;
 }
 
+form button{
+    margin-left: 40px;
+}
+
 .submit-section{
     margin: 40px;
 }
@@ -124,7 +134,7 @@ form h4{
     color: #596D48;
     font-weight: bold;
 }
-.submit-section a:hover, button:hover{
+.submit-section a:hover{
     color: #799462;
 }
 
@@ -134,15 +144,35 @@ button:hover{
 }
 
 /*MEDIA QUERIES*/
-
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {}
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {}
  
  /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {}
+ @media only screen and (max-width: 768px) {
+
+    input{
+        width:20rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .images {
+        height: 50vh;
+        width: 100vw;
+      }
+    
+    .form-group{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .sign-up-side .text {
+        margin: 20px 21px 40px 40px;
+        font-size: 1.4rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+      }
+
+ }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (max-width: 992px) {
